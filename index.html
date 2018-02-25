@@ -28,16 +28,67 @@
     var map = new google.maps.Map(document.getElementById('map'), options);
 
     // Array of markers
+    // var markers = [
+    //   {
+    //     coords:{lat:40.443468,lng:-79.954796},
+    //     content:'<h1>The William Pitt Union (where we hacking!)</h1>'
+    //   },
+    //   {
+    //     coords:{lat:40.442668,lng:-79.945753},
+    //     content:'<h1>The Wean Hall (where we from!)</h1>'
+    //   }
+    // ];
+
+    // test
     var markers = [
-      {
-        coords:{lat:40.443468,lng:-79.954796},
-        content:'<h1>The William Pitt Union (where we hacking!)</h1>'
-      },
-      {
-        coords:{lat:40.442668,lng:-79.945753},
-        content:'<h1>The Wean Hall (where we from!)</h1>'
-      }
+      { id: '166177947501239',
+        name: 'Now at the Omni William Penn! The Dinner Detective - Pittsburgh',
+        type: 'public',
+        coverPicture: 'https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/27747953_2264517406907432_7671109462966831165_o.jpg?oh=b44514581dabbdeb368e70a1ce50d22f&oe=5B138BBA',
+        profilePicture: 'https://scontent.xx.fbcdn.net/v/t1.0-0/c69.0.200.200/p200x200/27655522_2264517406907432_7671109462966831165_n.jpg?oh=36060559829b4f8022d3a0a081d80f02&oe=5B0718BA',
+        description: 'The Dinner Detective, America\'s Largest Murder Mystery Dinner Show, is proud to announce their new Partner in Crime, The Historic Omni William Penn!  Join us and solve a hilarious crime while you feast on a fantastic dinner.  Just beware!  The killer is hiding somewhere in the room, and you may find yourself as a Prime Suspect! \n\nThe Dinner Detective Murder Mystery Dinner Show performs weekly.  We also offer private events & shows that are customized to your group with roles for your group members to play.  Join us for a one-of-a-kind public or private event that your guests will talk about for months!',
+        distance: 87,
+        startTime: '2018-03-03T18:00:00-0500',
+        endTime: '2018-05-26T21:00:00-0400',
+        timezone: 'America/New_York',
+        updatedTime: '2018-02-09T23:53:01+0000',
+        timeFromNow: 545006,
+        isCancelled: false,
+        category: 'EVENT_THEATER',
+        ticketing:
+         { ticket_uri: 'https://www.thedinnerdetective.com/pittsburgh/schedule/' },
+        place:
+         { id: '1312671382092044',
+           name: 'Pittsburgh, PA - The Dinner Detective Murder Mystery Dinner Show',
+           location:
+            { city: 'Pittsburgh',
+              country: 'United States',
+              latitude: 40.440717090075,
+              longitude: -79.996916055679,
+              state: 'PA',
+              street: '530 William Penn Pl',
+              zip: '15219' } },
+        stats: { attending: 0, declined: 0, maybe: 43, noreply: 191 },
+        distances: { venue: 87, event: 87 },
+        venue:
+         { id: '1312671382092044',
+           name: 'Pittsburgh, PA - The Dinner Detective Murder Mystery Dinner Show',
+           about: 'America\'s largest interactive murder mystery comedy dinner show!  Solve a hilarious crime while you feast on a fantastic four-course plated dinner.',
+           emails: [ 'pbh.info@thedinnerdetective.com' ],
+           coverPicture: 'https://scontent.xx.fbcdn.net/v/t31.0-8/s720x720/23632562_2143982202294287_4160313874790137969_o.jpg?oh=d2e9d8df4249d3f6c57493df23aeb770&oe=5B043756',
+           profilePicture: 'https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/14064060_1491764647516049_8248700839535217473_n.jpg?oh=228e85246fd74e7633fe6f1cf28a73fb&oe=5B1177E2',
+           category: 'Comedy Club',
+           categoryList: [ 'Comedy Club', 'Performance Art Theatre' ],
+           location:
+            { city: 'Pittsburgh',
+              country: 'United States',
+              latitude: 40.440717090075,
+              longitude: -79.996916055679,
+              state: 'PA',
+              street: '530 William Penn Pl',
+              zip: '15219' } } }
     ];
+
 
     // Loop through markers
     for (var i=0; i<markers.length; i++){
