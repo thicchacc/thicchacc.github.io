@@ -40,8 +40,8 @@
     // ];
 
     // test
-    var markers require("markers");
-    markers.readFile("./pittevents");
+    var fs = require("fs");
+    var markers = fs.readFileSync("./pittevents");
 
     // Loop through markers
     for (var i=0; i<markers.length; i++){
