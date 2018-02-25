@@ -44,6 +44,23 @@
     });
     */
 
+    // Array of markers
+    var markers = [
+      {
+        coords:{lat:40.443468,lng:-79.954796},
+        content:'<h1>The William Pitt Union (where we hacking!)</h1>'
+      },
+      {
+        coords:{lat:40.442668,lng:-79.945753},
+        content:'<h1>The Wean Hall (where we from!)</h1>'
+      }
+    ];
+
+    // Loop through markers
+    for (var i=0; i<markers.length; i++){addMarker([i]);}
+
+
+
     addMarker({
       coords:{lat:40.443468,lng:-79.954796},
       content:'<h1>The William Pitt Union (where we hacking!)</h1>'
